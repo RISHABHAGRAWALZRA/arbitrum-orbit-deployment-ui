@@ -8,7 +8,7 @@ import {
   createRollupPrepareDeploymentParamsConfig,
   createRollupPrepareTransactionRequest,
   createRollupPrepareTransactionReceipt,
-} from '@arbitrum/orbit-sdk';
+} from '@avail-project/avail-orbit-sdk';
 
 import { ChainType } from '@/types/ChainType';
 import { Wallet } from '@/types/RollupContracts';

@@ -1,5 +1,5 @@
 'use client';
-import { CoreContracts } from '@arbitrum/orbit-sdk';
+import { CoreContracts } from '@avail-project/avail-orbit-sdk';
 import { Wallet } from '@/types/RollupContracts';
 import { RollupConfig } from '@/types/rollupConfigDataType';
 import {
@@ -12,7 +12,7 @@ import {
   useRef,
 } from 'react';
 import { useAccount } from 'wagmi';
-import { generateChainId } from '@arbitrum/orbit-sdk/utils';
+import { generateChainId } from '@avail-project/avail-orbit-sdk/utils';
 import { ChainType } from '@/types/ChainType';
 import { RollupConfigFormValues } from '../../app/deployment/step/configure/page';
 
@@ -92,7 +92,7 @@ type DeploymentPageContextValue = [
 
 export const DeploymentPageContext = createContext<DeploymentPageContextValue>([
   getDeploymentPageContextStateInitialValue(),
-  () => {},
+  () => { },
   {},
 ]);
 

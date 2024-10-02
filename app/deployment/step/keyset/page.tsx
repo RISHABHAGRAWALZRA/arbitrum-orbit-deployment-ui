@@ -1,7 +1,7 @@
 'use client';
 
 import { useAccount, usePublicClient, useWalletClient } from 'wagmi';
-import { setValidKeyset } from '@arbitrum/orbit-sdk';
+import { setValidKeyset } from '@avail-project/avail-orbit-sdk';
 
 import { useStep } from '@/hooks/useStep';
 import { assertIsAddress } from '@/utils/validators';
