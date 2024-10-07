@@ -36,3 +36,5 @@ next-env.d.ts
 
 # wagmi
 src/generated.ts
+
+.env

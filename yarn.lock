@@ -56,10 +56,10 @@
   optionalDependencies:
     "@openzeppelin/upgrades-core" "^1.24.1"
 
-"@avail-project/avail-orbit-sdk@^1.0.0-upstream-0.19.0":
-  version "1.0.0-upstream-0.19.0"
-  resolved "https://registry.yarnpkg.com/@avail-project/avail-orbit-sdk/-/avail-orbit-sdk-1.0.0-upstream-0.19.0.tgz#1ab80f5073aba774774a5330072499346e70eb53"
-  integrity sha512-d3Tk0+r2OyfEunUCB5lhI0e98Xaucd4X8GEQQHF0FlGV7uy0nNAjzDb02+Dr+XYzRhcGEG5JCkTi+ocLqPzXgg==
+"@avail-project/avail-orbit-sdk@^1.3.1-upstream-0.20.1":
+  version "1.3.1-upstream-0.20.1"
+  resolved "https://registry.yarnpkg.com/@avail-project/avail-orbit-sdk/-/avail-orbit-sdk-1.3.1-upstream-0.20.1.tgz#f4223f8f6dbe240165dd792273180b1c2182daaf"
+  integrity sha512-xuNSpD4d2jtb4Lp8OTlNaj4PuK7btlQkc0alZlsQmA3MDwGS3h0z8Dk+3Kmv8iVKzZlTaGm8w895YiI/0d6rnw==
   dependencies:
     "@arbitrum/sdk" "^4.0.0"
     "@arbitrum/token-bridge-contracts" "^1.2.2"

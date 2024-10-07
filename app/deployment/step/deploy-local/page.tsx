@@ -53,24 +53,17 @@ export default function DeployLocallyPage() {
       <StepTitle>Deploy Locally</StepTitle>
       <p>
         Once you've downloaded both config files, please follow the steps below to complete local
-        deployment of your Orbit chain. For more details on the steps involved and additional
-        context, please visit the{' '}
-        <ExternalLink
-          href={`${process.env.NEXT_PUBLIC_ARBITRUM_DOCS_BASE_URL}/launch-orbit-chain/orbit-quickstart`}
-          className="underline"
-        >
-          documentation
-        </ExternalLink>
+        deployment of your Orbit chain.
         .
       </p>
       <ol className="list-decimal pl-4">
         <li>
           Clone the{' '}
           <ExternalLink
-            href="https://github.com/OffchainLabs/orbit-setup-script"
+            href="https://github.com/availproject/orbit-setup-script"
             className="underline"
           >
-            https://github.com/OffchainLabs/orbit-setup-script
+            https://github.com/availproject/orbit-setup-script
           </ExternalLink>{' '}
           repository, and run:
           <br />

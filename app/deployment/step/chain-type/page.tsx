@@ -44,16 +44,9 @@ export default function ChainTypePage() {
             <ChainTypePicker
               selectedChainType={selectedChainType}
               onClick={handleChainTypeChange}
-              chainType={ChainType.Rollup}
-              label={'Rollup'}
-              description="Arbitrum’s market-leading optimistic rollup protocol. Rollup chains are EVM-equivalent and inherit security from Layer-1. They are permissionless to validate and secured by battle-tested Arbitrum fraud proofs."
-            />
-            <ChainTypePicker
-              selectedChainType={selectedChainType}
-              onClick={handleChainTypeChange}
-              chainType={ChainType.AnyTrust}
-              label={'AnyTrust'}
-              description="Arbitrum’s high scale and low fee protocol. AnyTrust chains are EVM-equivalent, powered by Arbitrum Nitro and secured by a trust-minimized Data Availability Committee (DAC) which stores and verifies transaction data offchain."
+              chainType={ChainType.Avail}
+              label={'AvailDA'}
+              description="Build with Avail DA, the validity proven data availability layer unifying Web3"
             />
           </div>
           <p className="text-red-500">{error}</p>
@@ -67,6 +60,7 @@ export default function ChainTypePage() {
       >
         {selectedChainType === ChainType.AnyTrust && <AnyTrustInfoPanel />}
         {selectedChainType === ChainType.Rollup && <RollupInfoPanel />}
+        {selectedChainType == ChainType.Avail && <AvailInfoPanel />}
       </div>
     </div>
   );
@@ -97,6 +91,17 @@ const RollupInfoPanel = () => (
     dataAvailabilityLayer="Ethereum"
     gasFee="Typically $0.10-$0.30"
     exampleChain="Arbitrum One"
+    logo={<Image src="/ArbOneLogo.svg" alt="Logo" width={20} height={18} />}
+  />
+);
+
+const AvailInfoPanel = () => (
+  <ChainTypeInfoPanel
+    header="AvailDA"
+    description="Avail is a base layer for secure, scalable and interoperable blockchains.Avail DA provides scalable data availability capacity that any rollup can use"
+    dataAvailabilityLayer="AvailDA"
+    gasFee="No concept of gas"
+    exampleChain="Nil"
     logo={<Image src="/ArbOneLogo.svg" alt="Logo" width={20} height={18} />}
   />
 );

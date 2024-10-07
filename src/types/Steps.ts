@@ -51,7 +51,7 @@ export const DownloadAnyTrustConfig = {
 
 export const DeployLocally = {
   id: StepIds.DeployLocally,
-  next: StepIds.RaasProviders,
+  next: null,
   previous: StepIds.DownloadConfig,
   label: 'Deploy Locally',
 } as const;

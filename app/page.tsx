@@ -12,9 +12,9 @@ import { DISCORD_LINK, GET_HELP_LINK } from '@/common/constants';
 import { RaasProviderGrid } from '@/components/RaasProviderGrid';
 
 const metadataContent = {
-  title: 'Arbitrum - Launch your own Orbit Chain!',
+  title: 'Avail - Launch your own Avail Orbit Chain!',
   description:
-    'Arbitrum Orbit is the ideal way to permissionlessly launch your own custom chain. Build a chain on top of Arbitrum One and Ethereum.',
+    'Avail Arbitrum Orbit is the ideal way to permissionlessly launch your own custom chain. Build a chain on top of Arbitrum Sepolia, Sepolia, and baseSepolia.',
 };
 
 // Generate server-side metadata for this page
@@ -48,14 +48,14 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
       {/* Banner Image */}
       <Card className="relative flex items-center justify-between gap-6 bg-gradient-landing-banner py-3 pl-8 pt-[110px] lg:flex-col lg:items-start lg:justify-center lg:py-[104px]">
         <p className="text-xl md:hidden lg:text-[28px]">Orbit</p>
-        <Image
+        {/* <Image
           alt="Bridge"
           src="/orbit_horizontal_logo_white.svg"
           width={124}
           height={31}
           className="hidden h-[31px] w-[124px] lg:block"
-        />
-        <p className="hidden text-xl md:block lg:text-[28px]">Launch your own Orbit Chain</p>
+        /> */}
+        <p className="hidden text-xl md:block lg:text-[28px]">Launch your own Avail Orbit Chain</p>
         <Image
           alt="Bridge"
           src="/illustration-orbit.webp"
@@ -65,7 +65,7 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
         />
       </Card>
 
-      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         {/* Orbit Docs card */}
         <Card
           className="relative flex flex-col gap-6 p-5 active:bg-blue md:hover:opacity-90"
@@ -103,7 +103,7 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
         </Card>
 
         {/* Admin UI Card */}
-        <Card
+        {/* <Card
           className="relative flex flex-col gap-6 p-4 active:bg-blue md:hover:opacity-90"
           cardType="link"
           showExternalLinkArrow={true}
@@ -118,11 +118,11 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
               Modify and optimize the parameters of your existing chains.{' '}
             </p>
           </div>
-        </Card>
+        </Card> */}
       </div>
 
       {/* Stylus card */}
-      <Card
+      {/* <Card
         className="relative flex shrink-0 grow-0 flex-col gap-6 bg-stylus-pink p-4 py-6 hover:bg-stylus-pink/80 lg:p-6"
         cardType="externalLink"
         href="https://arbitrum.io/stylus"
@@ -146,10 +146,10 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
             <ExternalLink className="text-xs underline underline-offset-8">Learn More</ExternalLink>
           </div>
         </div>
-      </Card>
+      </Card> */}
 
       {/* RaaS list */}
-      <div className="flex flex-col gap-4">
+      {/* <div className="flex flex-col gap-4">
         <Card className="flex flex-col gap-4 bg-default-black text-sm">
           <div className="text-xl lg:text-3xl">Launch to Mainnet</div>
           <hr className="opacity-20" />
@@ -159,10 +159,10 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
           </div>
           <RaasProviderGrid />
         </Card>
-      </div>
+      </div> */}
 
       {/* Orbit SDK link */}
-      <Card
+      {/* <Card
         className="relative flex flex-col gap-6 p-4 active:bg-[#0C6DA3] md:hover:opacity-90"
         cardType="externalLink"
         href="https://github.com/OffchainLabs/arbitrum-orbit-sdk"
@@ -182,12 +182,12 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
 
           <div className="w-full text-base">Dive into the SDK</div>
         </div>
-      </Card>
+      </Card> */}
 
       {/* Other links */}
-      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-        {/* Discord */}
-        <Card
+      {/* <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2"> */}
+      {/* Discord */}
+      {/* <Card
           className="relative flex flex-col gap-6 bg-blue p-4 md:hover:opacity-90"
           cardType="externalLink"
           showExternalLinkArrow
@@ -202,10 +202,10 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
 
             <div className="w-full text-base text-black">Get support</div>
           </div>
-        </Card>
+        </Card> */}
 
-        {/* Contact us */}
-        <Card
+      {/* Contact us */}
+      {/* <Card
           className="relative flex flex-col gap-6 p-4 active:bg-blue md:hover:opacity-90"
           cardType="externalLink"
           href={GET_HELP_LINK}
@@ -217,8 +217,8 @@ export default function LaunchPage(params: OptionalOrbitPageParams) {
             </div>
             <div className="w-full text-base">Get in touch</div>
           </div>
-        </Card>
-      </div>
+        </Card> */}
+      {/* </div> */}
     </div>
   );
 }

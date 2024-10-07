@@ -65,7 +65,7 @@ export const useStep = () => {
   const currentStepId = pathname ? getLastPartOfPath(pathname) : FIRST_STEP.id;
 
   const chainStepMap: Record<string, Step> =
-    chainType === ChainType.Rollup ? RollupStepMap : AnyTrustStepMap;
+    chainType === ChainType.Rollup ? RollupStepMap : chainType === ChainType.Avail ? RollupStepMap : AnyTrustStepMap;
 
   const findStepById = (id: string): Step | undefined => {
     const keys = Object.keys(chainStepMap);
@@ -82,7 +82,6 @@ export const useStep = () => {
       sortedSteps.push(currentStep);
       currentStep = steps.find((step) => step.label && step.id === currentStep?.next);
     }
-
     return sortedSteps;
   };
 
